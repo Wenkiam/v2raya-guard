@@ -1,0 +1,13 @@
+[Unit]
+Description=v2ray guard Service
+After=network.target
+
+[Service]
+Type=simple
+User=nobody
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/local/v2raya/v2raya-guard -c /usr/local/v2raya/config.json
+
+[Install]
+WantedBy=multi-user.target

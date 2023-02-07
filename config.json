@@ -1,0 +1,7 @@
+{
+  "username": "username",
+  "password": "password",
+  "serverBase": "http://localhost:2017/api/",
+  "logFile": "/var/log/v2raya/guard.log",
+  "cron": "30 3,12,20 * * *"
+}
