@@ -60,9 +60,11 @@ func initServerBase(s string) {
 	}
 	if strings.HasSuffix(s, "/api") {
 		serverBase = s + "/"
+		return
 	}
 	if strings.HasSuffix(s, "/") {
 		serverBase = s + "api/"
+		return
 	}
 	serverBase = s + "/api/"
 }
